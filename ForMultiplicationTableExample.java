@@ -1,14 +1,12 @@
-package sec01.exam02;
+package sec04.exam01;
 
 public class ForMultiplicationTableExample {
 	public static void main(String[] args) {
 		
-		for(int i = 2; i <= 9; i++) {
-			System.out.println();
-			System.out.println("*** " + i + "단 ***");
-			for(int j = 1; j <= 9; j++) {
-				System.out.println(i + " X " + j + " = " + (i * j));
-				
+		for (int m = 2; m <= 9; m++) { // 바깥쪽 for 문
+			System.out.println("*** " + m + "단 ***");
+			for (int n = 1; n <= 9; n++) { // 중첩 for 문
+				System.out.println(m + " x " + n + " = " + (m*n));
 			}
 		}
 	}
