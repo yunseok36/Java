@@ -1,4 +1,4 @@
-package sec02.exam02;
+package sec05.exam01;
 
 public class ArrayReferenceObjectExample {
 	public static void main(String[] args) {
@@ -7,8 +7,8 @@ public class ArrayReferenceObjectExample {
 		strArray[1] = "Java";
 		strArray[2] = new String("Java");
 		
-		System.out.println(strArray[0] == strArray[1]); // 주소값을 비교
-		System.out.println(strArray[0] == strArray[2]);
-		System.out.println(strArray[0].equals(strArray[2])); // 문자열을 비교
+		System.out.println(strArray[0] == strArray[1]); // true
+		System.out.println(strArray[0] == strArray[2]); // false
+		System.out.println(strArray[0].equals(strArray[2])); // true
 	}
 }
