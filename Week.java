@@ -1,9 +1,9 @@
-package sec03.exam01;
+package sec05.exam01;
 
 public enum Week {
-	MONDAY,
-	TUESDAY,
-	WEDNESDAY,
+	MONDAT,
+	TUSEDAT,
+	WEDNSDAY,
 	THURSDAY,
 	FRIDAY,
 	SATURDAY,
