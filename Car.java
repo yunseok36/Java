@@ -1,10 +1,11 @@
-package sec03.exam02;
+package sec06.exam01;
 
-public class Car {
-	
-	String company = "현대자동차";
-	String model = "그랜저";
-	String color = "검정";
-	int maxSpeed = 350;
+public class Car { // Car 클래스 선언
+
+	// 필드 선언
+	String company = "BMW";
+	String model = "I8";
+	String color = "흰색";
+	int maxSpeed = 400;
 	int speed;
 }
