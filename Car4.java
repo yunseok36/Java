@@ -1,26 +1,24 @@
-package sec03.exam02;
+package sec06.exam01;
 
 public class Car4 {
 
-	
-	String company = "현대자동차";
+	// 필드
+	String company = "BMW";
 	String model;
 	String color;
 	int maxSpeed;
 	
-	Car4() { // 1) 생성자 (기본 생성자)
-	} 
-	
-	Car4(String model) { // 2) 생성자
-		this.model = model;
+	// 생성자
+	Car4(){
 	}
 	
-	Car4(String model, String color) { // 3) 생성자
-		this.model = model;
-		this.color = color;
+	Car4(String model) {
+		this(model, "은색", 250);
 	}
-	
-	Car4(String model, String color, int maxSpeed) { // 4) 생성자
+	Car4(String model, String color) {
+		this(model, color, 250);
+	}
+	Car4(String model, String color, int maxSpeed) {
 		this.model = model;
 		this.color = color;
 		this.maxSpeed = maxSpeed;
