@@ -1,19 +1,18 @@
-package sec03.exam02;
+package sec06.exam01;
 
 public class FieldInitValueExample {
 	public static void main(String[] args) {
-		FieldInitValue fiv = new FieldInitValue(); 
-		// 클래스 FieldInitValue 를 참조하기 위한 코드
+		FieldInitValue fiv = new FieldInitValue(); // 클래스 FieldInitValue 를 참조하기 위한 코드
 		
 		System.out.println("byteField : " + fiv.byteField);
 		System.out.println("shortField : " + fiv.shortField);
 		System.out.println("intField : " + fiv.intField);
 		System.out.println("longField : " + fiv.longField);
-		System.out.println("booleanField : " + fiv.booleanField);
+		System.out.println("booleanFiled : " + fiv.booleanField);
 		System.out.println("charField : " + fiv.charField);
 		System.out.println("floatField : " + fiv.floatField);
 		System.out.println("doubleField : " + fiv.doubleField);
-		System.out.println("arrField :" + fiv.arrField);
+		System.out.println("arrField : " + fiv.arrField);
 		System.out.println("referenceField : " + fiv.referenceField);
 	}
 }

@@ -1,6 +1,8 @@
-package sec03.exam02;
+package sec06.exam01;
 
 public class FieldInitValue {
+
+	// 필드
 	byte byteField;
 	short shortField;
 	int intField;
@@ -12,6 +14,6 @@ public class FieldInitValue {
 	float floatField;
 	double doubleField;
 	
-	int[] arrField;
-	String referenceField;
+	int[] arrField; // 배열
+	String referenceField; // 필드
 }
