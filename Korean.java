@@ -1,12 +1,14 @@
-package sec03.exam02;
+package sec06.exam01;
 
 public class Korean {
-	
-	String nation = "대한민국"; // 필드 선언
+
+	// 필드 선언
+	String nation = "대한민국";
 	String name;
 	String ssn;
 	
-	public Korean(String n, String s) { // 생성자 선언
+	// 셍성자 선언
+	public Korean(String n, String s) {
 		name = n;
 		ssn = s;
 	}
