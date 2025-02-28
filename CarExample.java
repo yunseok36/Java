@@ -1,18 +1,21 @@
-package sec06.exam01;
+package sec06.exam02;
 
 public class CarExample {
 	public static void main(String[] args) {
-		Car myCar = new Car(); // 객체 생성
+		Car myCar = new Car();
 		
-		// 필드값 읽기
-		System.out.println("제작회사 : " + myCar.company);
-		System.out.println("모델명 : " + myCar.model);
-		System.out.println("색깔 : " + myCar.color);
-		System.out.println("최고속도 : " + myCar.maxSpeed);
-		System.out.println("현재속도 : " + myCar.speed);
+		// 잘못된 속도 변경
+		myCar.setSpeed(-50);
+		System.out.println("현재속도 : " + myCar.getSpeed());
 		
-		// 필드값 변경
-		myCar.speed = 60; // 변수 사용하는 방법처럼 값을 변경해줌
-		System.out.println("수정된 속도 : " + myCar.speed);
+		// 올바른 속도 변경
+		myCar.setSpeed(60);
+		
+		// 멈춤
+		if(!myCar.isStop()) {
+			myCar.setStop(true);
+		}
+		
+		System.out.println("현재속도 : " + myCar.getSpeed());
 	}
 }
