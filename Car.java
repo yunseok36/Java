@@ -1,31 +1,16 @@
-package sec06.exam02;
+package sec07.exam01;
 
 public class Car {
-	//필드 생성
-	private int speed;
-	private boolean stop;
-	
-	// 생성자
+
+	// 필드 선언
+	public int speed;
 	
 	// 메소드
-	public int getSpeed() {
-		return speed;
-	}
-	public void setSpeed(int speed) {
-		if(speed < 0) {
-			this.speed = 0;
-			return;
-		} else {
-			this.speed = speed;
-		}
-	}
+	public void speedUp() { speed += 1; } // speed = speed + 1
 	
-	public boolean isStop() {
-		return stop;
+	// final 메소드
+	public final void stop() {
+		System.out.println("차를 멈춤");
+		speed = 0;
 	}
-	public void serStop(boolean stop) {
-		this.stop = stop;
-		this.speed = 0;
-	}
-
 }
