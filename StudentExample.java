@@ -1,11 +1,10 @@
-package sec06.exam01;
+package sec07.exam01;
 
 public class StudentExample {
 	public static void main(String[] args) {
-		Student s1= new Student(); // s1 이라는 변수에는 Student 객체의 메모리의 주소값(번지)을 저장
-		System.out.println("s1 변수가 Student 객체를 참조합니다.");
-		
-		Student s2 = new Student();
-		System.out.println("s2 변수가 또 다른 Student 객체를 참조합니다.");
+		Student student = new Student("홍길동", "123456-1234567", 1);
+		System.out.println("name : " + student.name); // 부모에게 상속받은 필드 출력
+		System.out.println("ssn : " + student.ssn); // 부모에게 상속받은 필드 출력
+		System.out.println("studentNo : " + student.studentNo); // 자녀 객체에 있는 필드 출력
 	}
 }

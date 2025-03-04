@@ -1,5 +1,12 @@
-package sec06.exam01;
+package sec07.exam01;
 
-public class Student {
-// heap 영역에 Student 라는 클래스를 생성한 것
+public class Student extends People {
+	// 필드 선언
+	public int studentNo;
+	
+	// 생성자 선언
+	public Student(String name, String ssn, int studentNo) {
+		super(name, ssn); // 부모 생성자 호출
+		this.studentNo = studentNo;
+	}
 }
