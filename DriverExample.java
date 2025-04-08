@@ -1,4 +1,4 @@
-package sec07.exam02;
+package sec08.exam02;
 
 public class DriverExample {
 	public static void main(String[] args) {
