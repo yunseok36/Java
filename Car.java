@@ -1,25 +1,31 @@
-package sec07.exam02;
+package sec06.exam02;
 
 public class Car {
-
-	// 필드 선언'
-	Tire frontLeftTire = new Tire("앞왼쪽", 6);
-	Tire frontRightTire = new Tire("앞오른쪽", 2);
-	Tire backLeftTire = new Tire("뒤왼쪽", 3);
-	Tire backRightTire = new Tire("뒤오른쪽", 4);
+	//필드 생성
+	private int speed;
+	private boolean stop;
 	
 	// 생성자
 	
 	// 메소드
-	int run() {
-		System.out.println("[자동차가 달립니다.]");
-		if(frontLeftTire.roll() == false) { stop(); return 1; }
-		if(frontRightTire.roll() == false) { stop(); return 2; }
-		if(backLeftTire.roll() == false) { stop(); return 3; }
-		if(backRightTire.roll() == false) { stop(); return 4; }
+	public int getSpeed() {
+		return speed;
+	}
+	public void setSpeed(int speed) {
+		if(speed < 0) {
+			this.speed = 0;
+			return;
+		} else {
+			this.speed = speed;
+		}
 	}
 	
-	void stop() {
-		System.out.println("[자동차가 멈춥니다.]");
+	public boolean isStop() {
+		return stop;
 	}
+	public void serStop(boolean stop) {
+		this.stop = stop;
+		this.speed = 0;
+	}
+
 }
