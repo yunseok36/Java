@@ -1,4 +1,4 @@
-package sec06.exam01;
+package sec06.exam03;
 
 public class Korean {
 
@@ -7,7 +7,7 @@ public class Korean {
 	String name;
 	String ssn;
 	
-	// 셍성자 선언
+	// 생성자 선언
 	public Korean(String n, String s) {
 		name = n;
 		ssn = s;
