@@ -1,9 +1,23 @@
-package sec07.exam01;
+package sec06.exam04;
 
 public class Calculator {
-	// 클래스 Calculator 의 areaCircle( ) 메소드 선언
-	double areaCircle(double r) {
-		System.out.println("Calculator 객체의 areaCircle() 실행");
-		return 3.14159 * r * r;
+
+	// 메소드
+	void powerOn() {
+		System.out.println("전원을 켭니다.");
+	}
+	
+	int plus(int x, int y) {
+		int result = x + y;
+		return result;
+	}
+	
+	double divide(int x, int y) {
+		double result = (double)x / (double)y;
+		return result;
+	}
+	
+	void powerOff() {
+		System.out.println("전원을 끕니다."); 
 	}
 }
