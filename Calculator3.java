@@ -1,4 +1,4 @@
-package sec06.exam01;
+package sec06.exam04;
 
 public class Calculator3 {
 
