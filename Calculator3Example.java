@@ -1,11 +1,11 @@
-package sec06.exam01;
+package sec06.exam04;
 
 public class Calculator3Example {
 	public static void main(String[] args) {
 		Calculator3 myCalcu = new Calculator3();
 		
 		// 정사각형의 넓이 구하기
-		double result1 =  myCalcu.areaRectangle(10);
+		double result1 = myCalcu.areaRectangle(10);
 		
 		// 직사각형의 넓이 구하기
 		double result2 = myCalcu.areaRectangle(10, 20);
