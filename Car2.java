@@ -1,29 +1,25 @@
-package sec06.exam03;
+package sec06.exam04;
 
 public class Car2 {
 
 	// 필드 생성
-	String company = "현대자동차";
-	String model;
-	String color;
-	int maxSpeed;
+	int speed;
 	
 	// 생성자
-	Car2() { // 기본 생성자
+	
+	// 메소드
+	int getSpeed() {
+		return speed;
 	}
 	
-	Car2(String model) {
-		this.model = model; // 생성자
+	void keyTurnOn() {
+		System.out.println("키를 돌립니다.");
 	}
 	
-	Car2(String model, String color) {
-		this.model = model;
-		this.color = color;
-	}
-	
-	Car2(String model, String color, int maxSpeed) {
-		this.model = model;
-		this.color = color;
-		this.maxSpeed = maxSpeed;
+	void run() {
+		for(int i = 10; i <= 50; i+=10) {
+			speed = i;
+			System.out.println("달립니다. (시속 :" + speed + "km/h)");
+		}
 	}
 }
