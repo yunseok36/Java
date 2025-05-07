@@ -1,16 +1,18 @@
-package sec07.exam01;
+package sec06.exam04;
 
 public class ComputerExample {
-	public static void main(String[] args) {
-		int r = 10;
-		
-		// 객체 생성_클래스 Calculator 를 참조하기 위해서
-		Calculator calculator = new Calculator();
-		System.out.println("원 면적 : " + calculator.areaCircle(r));
-		System.out.println();
-		
-		// 객체 생성_클래스 Computer 를 참조하기 위해서
-		Computer computer = new Computer();
-		System.out.println("원 면적 : " + computer.areaCircle(r)); // 재정의된 메소드 호출
-	}
+	Computer myCom = new Computer();
+	
+	int[] values1 = {1, 2, 3};
+	int result1 = myCom.sum1(values1);
+	System.out.println("result1 : " + result1);
+	
+	int result2 = myCom.sum1(new int[] {1, 2, 3, 4, 5});
+	System.out.println("result2 : " + result2);
+	
+	int result3 = myCom.sum2(1, 2, 3);
+	System.out.println("result3 : " + result3);
+	
+	int result4 = myCom.sum2(1, 2, 3, 4, 5);
+	System.out.println("result4 : " + result4);
 }
