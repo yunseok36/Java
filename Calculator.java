@@ -1,23 +1,13 @@
-package sec06.exam04;
+package sec06.exam05;
 
 public class Calculator {
-
-	// 메소드
-	void powerOn() {
-		System.out.println("전원을 켭니다.");
+	static double pi = 3.14159; // 정적 pi 필드 선언
+	
+	static int plus(int x, int y) { // 정적 plus 메소드 선언
+		return x + y; // 15, result2로 리턴값 15를 저장
 	}
 	
-	int plus(int x, int y) {
-		int result = x + y;
-		return result;
-	}
-	
-	double divide(int x, int y) {
-		double result = (double)x / (double)y;
-		return result;
-	}
-	
-	void powerOff() {
-		System.out.println("전원을 끕니다."); 
+	static int minus(int x, int y) { // 정적 minus 메소드 선언
+		return x - y; // 5, result3로 리턴값 5를 저장
 	}
 }
