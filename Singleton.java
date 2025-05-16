@@ -1,4 +1,4 @@
-package sec06.exam01;
+package sec06.exam05;
 
 public class Singleton {
 	private static Singleton singleton = new Singleton(); // 필드
@@ -8,4 +8,5 @@ public class Singleton {
 	static Singleton getInstance() { // 메소드
 		return singleton;
 	}
+	
 }
