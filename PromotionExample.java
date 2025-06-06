@@ -1,32 +1,26 @@
-package sec07.exam02;
-
-
-class A {}
-
-class B extends A {}
-class C extends A {}
-
-class D extends B {}
-class E extends C {}
+package sec01.exam03;
 
 public class PromotionExample {
 	public static void main(String[] args) {
-		B b = new B();
-		C c = new C();
-		D d = new D();
-		E e = new E();
+		// 자동타입변환
+		byte byteValue = 10;
+		int intValue = byteValue;
+		System.out.println("intValue : " + intValue);
 		
-		A a1 = b;
-		A a2 = c;
-		A a3 = d;
-		A a4 = e;
+		char charValue = '가';
+		intValue = charValue;
+		System.out.println("가의 유니코드 : " + intValue);
 		
-		B b1 = d;
-		C c1 = e;
+		intValue = 50;
+		long longValue = intValue;
+		System.out.println("longValue : " + longValue);
 		
-		// 상속 관계에 있지 않기 때문에 컴파일에러 발생
-		// 직계가 아니기 때문에 자동타입변환이 일어나지 않아서 컴파일에러 발생
-		// B b3 = e;
-		// C c2 = d;
+		longValue = 100;
+		float floatValue = longValue;
+		System.out.println("floatValue : " + floatValue);
+		
+		floatValue = 100.5F;
+		double doubleValue = floatValue;
+		System.out.println("doubleValue : " + doubleValue);
 	}
 }
